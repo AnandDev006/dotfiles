@@ -19,7 +19,7 @@ function ccp_fast() {
   
 }
 
-function dbg() {
+function gocp() {
   
   ccp ${1-"a.cpp"}
 
@@ -36,7 +36,7 @@ function dbg() {
 
 }
 
-function test() {
+function gocpt() {
  
   ccp ${1-"a.cpp"}
  
