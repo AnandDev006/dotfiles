@@ -19,7 +19,7 @@ function ccp_fast() {
   
 }
 
-function gocp() {
+function cp() {
   
   ccp ${1-"a.cpp"}
 
@@ -36,14 +36,14 @@ function gocp() {
 
 }
 
-function gocpt() {
+function cpt() {
  
   ccp ${1-"a.cpp"}
  
-  ./a < a.01.inp
+  ./a < a.test
   
 }
 
 function pubip() {
-  curl https://icanhazip.com/ --silent | tr -d '[:space:]' | pbcopy
+  curl https://icanhazip.com/ --silent | tr -d '[:space:]' | xclip -selection c
 }
