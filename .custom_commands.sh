@@ -47,3 +47,8 @@ function test() {
 function pubip() {
   curl https://icanhazip.com/ --silent | tr -d '[:space:]' | pbcopy
 }
+
+function glassdoor() {
+    echo "document.getElementById('HardsellOverlay').remove();
+document.body.style.overflow = '';" | pbcopy
+ }
