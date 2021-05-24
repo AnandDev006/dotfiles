@@ -45,15 +45,10 @@ function cpt() {
 }
 
 function pubip() {
-<<<<<<< HEAD
-  curl https://icanhazip.com/ --silent | tr -d '[:space:]' | pbcopy
+  curl -4 https://icanhazip.com --silent | tr -d '[:space:]' | pbcopy
 }
 
 function glassdoor() {
     echo "document.getElementById('HardsellOverlay').remove();
 document.body.style.overflow = '';" | pbcopy
  }
-=======
-  curl https://icanhazip.com/ --silent | tr -d '[:space:]' | xclip -selection c
-}
->>>>>>> 09a22b9378b8d97011336d23f519b1a59a6b3f16
