@@ -19,7 +19,7 @@ function ccp_fast() {
   
 }
 
-function cp() {
+function rcp() {
   
   ccp ${1-"a.cpp"}
 
@@ -52,3 +52,15 @@ function glassdoor() {
     echo "document.getElementById('HardsellOverlay').remove();
 document.body.style.overflow = '';" | pbcopy
  }
+
+# User configurations
+alias tmux_base="tmux attach -t base || tmux new -s base;"
+alias django="python manage.py"
+alias dev="cd ~/private/Dev"
+
+# RIPPLING
+alias rmain="cd ~/rippling/rippling-main/"
+alias rweb="cd ~/rippling/rippling-webapp/"
+alias rbs="rmain && source shell-docker.sh && rippling-main-server"
+alias rfsp="rweb && source config.prod.sh && npm run start"
+alias rfsl="rweb && source config.sample.sh && npm run start"
