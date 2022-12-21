@@ -59,6 +59,7 @@ alias django="python manage.py"
 alias dev="cd ~/private/Dev"
 
 # RIPPLING
+alias __clear_git_local_branches="git branch | grep -v 'master' | xargs git branch -D"
 alias rmain="cd ~/rippling/rippling-main/"
 alias rweb="cd ~/rippling/rippling-webapp/"
 alias rbs="rmain && source shell-docker.sh && rippling-main-server"
